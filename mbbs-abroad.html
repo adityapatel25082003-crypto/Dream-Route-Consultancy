@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MBBS Abroad - Dream Route Consultancy</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#a8c8ff",
+                        "on-primary": "#ffffff",
+                        "secondary": "#735c00",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-container": "#5c677c",
+                        "outline-variant": "#c1c6d4",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "primary": "#004e99",
+                        "surface-container-highest": "#e0e3e5",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed-variant": "#00468a",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-background": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container": "#eceef0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-tint": "#005eb5",
+                        "on-tertiary-container": "#dbe6fe",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed": "#111c2d",
+                        "outline": "#727783",
+                        "on-surface-variant": "#414752",
+                        "on-primary-fixed": "#001b3d",
+                        "tertiary-fixed-dim": "#bcc7de",
+                        "tertiary": "#444f63",
+                        "surface-variant": "#e0e3e5",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#241a00",
+                        "primary-container": "#0a66c2",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed": "#d8e3fb",
+                        "on-primary-container": "#dbe6ff",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#745c00",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "surface-container-high": "#e6e8ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px",
+                        "section-padding": "80px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .smooth-shadow {
+            box-shadow: 0 4px 24px -4px rgba(10, 102, 194, 0.08), 0 2px 8px -2px rgba(10, 102, 194, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<div class="docked full-width top-0 relative bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container cursor-default hidden md:block z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-2 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+<span class="font-label-md text-label-md font-semibold text-on-primary">Call us: 7225922529 | Locations: Bilaspur, Kolkata, Delhi, Nagpur...</span>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:opacity-90 cursor-pointer text-[18px]">location_on</span>
+<span class="material-symbols-outlined hover:opacity-90 cursor-pointer text-[18px]">phone_in_talk</span>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface shadow-sm dark:border-b dark:border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20 px-margin-mobile md:px-margin-desktop">
+<a class="flex items-center h-12" href="#"><img alt="Dream Route Consultancy Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCTWkxng76wnqIj0FWxNzfJGO7xxbUqZ9d267mTVX-RWgAGhrLaXTzblsdoTo1awdieSWuKJ6wJJnBwzlTtOOmrot1hIXLbMe3zo_UFuMwSl9K471SK7YllmjnYwE_iNdIcMsiuvnd79kElPvGihz4dP_x83b-PE1Df8x2TL5Yz9e4aLvfAF40hDccuCGcsXhjZYeSd1b6KiPFoYX129RR2sZs_Wl2KuFbrICE46sMxfDUvH0nhutj16DGUmQsY0xbcPzrS7dxnJs"/></a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:translate-y-[-2px] duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:translate-y-[-2px] duration-200" href="#">MBBS in India</a>
+<a class="font-label-md text-label-md text-primary dark:text-inverse-primary font-bold border-b-2 border-primary dark:border-inverse-primary pb-1 hover:translate-y-[-2px] duration-200" href="#">MBBS Abroad</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:translate-y-[-2px] duration-200" href="#">BDS/AYUSH</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:translate-y-[-2px] duration-200" href="#">PG Admissions</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:translate-y-[-2px] duration-200" href="#">Contact</a>
+</div>
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary/90 transition-all hover:translate-y-[-2px] duration-200 shadow-sm">
+                Book Free Counseling
+            </button>
+<button class="md:hidden flex items-center justify-center p-2 text-on-surface">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-30" data-alt="A cinematic, wide-angle photograph of a prestigious international medical university campus on a sunny day. The architecture mixes classic European stonework with modern glass medical facilities. Diverse medical students in white coats are walking between buildings. High-key lighting, bright blue sky, conveying academic excellence and international opportunity. Modern, premium lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvgNkCAIeL1KnALEP5RcnMccdc-EDmE3wYjz3gd-GXslalwa7nclys-2LvTxGkqPT3iSouk0vODLyxk2GOcEY7z09hKCPsY75Kin4orAcSzyTwXzIqhFWoWj6bLlX-NDCmJjpEazWGbGULoE90wdL3rEVUuqCtxS86lAGMBnBHBt4LtSxGicUk3LMscPBrkh2myjD5u6bMStYus0s_xxxRXAwaGTgKnZNFV7Yu5QUI47ABUYFSfo1imF-_PtIp76Pe-f9xRV5D-m4')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding md:py-[120px]">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 mb-6 bg-primary-fixed text-on-primary-fixed font-label-md text-label-md rounded-full shadow-sm">Global Medical Education</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-stack-lg">
+                        Your Journey to Becoming a <span class="text-primary">Global Doctor</span> Starts Here.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+                        Pursue your medical dreams at top NMC-approved universities worldwide. Affordable tuition, world-class infrastructure, and comprehensive support from admission to graduation.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-primary/90 transition-all hover:-translate-y-1 shadow-md flex items-center justify-center gap-2">
+<span>Talk to an Abroad Counselor</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="border-2 border-primary text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-primary-fixed/20 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Brochure</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Countries Grid Section -->
+<section class="bg-background py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-[48px] max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Top Destinations for Indian Medical Aspirants</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We partner with premier medical universities in NMC-recognized countries, offering English-medium programs and excellent clinical exposure.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Russia -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden smooth-shadow group hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full">
+<div class="h-40 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A striking image of a Russian medical university facade, possibly showcasing classical architecture like Lomonosov Moscow State University or similar prestigious institutions. Snow-dusted rooftops under a clear bright sky. Modern UI aesthetic, high fidelity, emphasizing grandeur and academic tradition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSTJ601Wd-pCOj0UxNDiI9xNhxMYntoe7nQpXs5vmWA9rb2F51y1T-kwcN_xocxv5z0WrAAX2L1-guRmTCUy4F7Jxfqej98q180tConBS-JSqhMGtuKChJ3tT5XZrijaTpant2nys64a7Wci0Tok2SXXujeeCTYdbU_JfHWcJkxkDL5_5NxQ6BL55STLGcA4o7j-pt5JXD1ws3nOZbC-_WNfNckfn8ZCfZkFpM6Ez1d3716Yit2HME71vULVUVYsEaZZ-FDF_S_yE')"></div>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1 rounded-full border border-outline-variant/50">
+<span class="font-label-md text-label-md text-primary">Top Choice</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Russia</h3>
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Tuition Fee</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">₹15L - ₹35L (Total)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Hostel</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Available on campus</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Duration</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">6 Years</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">NMC Eligibility</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Fully Approved</p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary font-label-md text-label-md py-2 rounded hover:bg-primary-fixed/20 transition-colors">View Universities</button>
+</div>
+</div>
+<!-- Georgia -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden smooth-shadow group hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full">
+<div class="h-40 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A picturesque view of a modern medical university campus in Georgia, nestled against a backdrop of scenic mountains. Crisp, clean architecture with large glass windows. High-end modern UI photography, bright and inviting, showcasing a premium European education environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuYSzMfGdEAroH3Wd53avhITGTb6xF27-N3R7f5B7_b5QsjYeR3a-NUmB0d0i1EvVjdS1QemuQrX4p1Ot9es2btT9BNgfck6kAVJn_IX0Gg5kGnjXs_j9p6Y-JBilgjqiargixQ-yUJqFY7qZIy2lbO7eboHPWvVNZX75lcgVWgdT1v7g-SjxBeA2s_CanTCR4_EIpV4YTnhpAwVPHKIn5rSXM-RvqO9xPhdZEoVd6MSxOB0ZK6a41LoVWMt7P9DFnVBWT1yBwE88')"></div>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1 rounded-full border border-outline-variant/50">
+<span class="font-label-md text-label-md text-primary">High FMGE</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Georgia</h3>
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Tuition Fee</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">₹20L - ₹30L (Total)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Hostel</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Private &amp; University</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Duration</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">5.8 Years</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">NMC Eligibility</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Fully Approved</p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary font-label-md text-label-md py-2 rounded hover:bg-primary-fixed/20 transition-colors">View Universities</button>
+</div>
+</div>
+<!-- Kazakhstan -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden smooth-shadow group hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full">
+<div class="h-40 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, contemporary medical campus in Kazakhstan, featuring futuristic architecture and clean, wide boulevards. Students in medical scrubs walking outside. High-key lighting, bright and modern aesthetic suited for a premium educational consultancy landing page." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQN_00wAPbbviURDcNOzfDKHTHQMfRVryg1TMgaWWGz76n5msZPq9asV8JNq1lg3yZmSh5omBb3NiSFD8gyppxwl58xcy_ce4zFSNieRybQ2v_kDILd5TiEPquQDC0lD7EUBabfphYkpsDUg_yNk7xUBIcKgJJbNXOdEk85Nxj1MyjWU9U1KiQQ-1WiUUkm3TwswqnYeFnT-59oihd99G2uh56Q2jC2uA8ghJio_SWczuoN9SGkbaSSpyicL6IweEDVGC4AkpytZo')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Kazakhstan</h3>
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Tuition Fee</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">₹15L - ₹25L (Total)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Hostel</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Available on campus</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Duration</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">5 Years</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">NMC Eligibility</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Fully Approved</p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary font-label-md text-label-md py-2 rounded hover:bg-primary-fixed/20 transition-colors">View Universities</button>
+</div>
+</div>
+<!-- Uzbekistan -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden smooth-shadow group hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full">
+<div class="h-40 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A modern university building in Uzbekistan, perhaps with subtle traditional architectural motifs blended into a highly modern glass and steel structure. Clear skies, vibrant and professional high-end photography suitable for a medical education website." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1Ffe7O3-H1y5IWYc01n6iBg-TnEKFJ7zMmgg34Ya9HwumFGvnFJt3HCGC-sghZlhFJhyhuW0n94LsWYGjInKfA6uXJOVuWQuq8oTuK71OpauJEBqCnZ-m2M2v598hSkgUIL4oleXdWO6ikCF2zNfKoBUCDyijqR8ektq-0iM8Nnj-poJYuBSkbDJ6rmNCeUa-p2KCc__TzB7CHGJpZ9jE4MR85UxfK-6YqEZJo-mRMyzfyS_VUj88APw4NVJWVCt-TznWozHEiBs')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Uzbekistan</h3>
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Tuition Fee</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">₹14L - ₹20L (Total)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Hostel</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Available on campus</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Duration</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">5 Years</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">NMC Eligibility</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Fully Approved</p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary font-label-md text-label-md py-2 rounded hover:bg-primary-fixed/20 transition-colors">View Universities</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row items-center gap-gutter">
+<div class="lg:w-1/3">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md">Comprehensive Support System</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">We don't just secure your admission; we stand by you throughout your entire medical journey abroad. By medical students, for future doctors.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary/90 transition-all hover:-translate-y-1 shadow-sm">Explore Our Services</button>
+</div>
+<div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-gutter w-full">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-fixed">description</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-2">Visa Assistance</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">End-to-end documentation, interview preparation, and embassy liaison for 100% visa success rate.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-fixed">flight_land</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-2">Airport Pickup</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Our representatives receive students at the destination airport and arrange safe transport to the university.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-fixed">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-2">Post-Admission Support</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Local SIM cards, bank account opening, hostel settlement, and 24/7 emergency support line.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-fixed">school</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-2">FMGE/NEXT Prep</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Integrated coaching access and study materials from year one to ensure you clear licensing exams.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline full-width bottom-0 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="col-span-1 md:col-span-1">
+<div class="mb-4 h-12 w-fit"><img alt="Dream Route Consultancy Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCTWkxng76wnqIj0FWxNzfJGO7xxbUqZ9d267mTVX-RWgAGhrLaXTzblsdoTo1awdieSWuKJ6wJJnBwzlTtOOmrot1hIXLbMe3zo_UFuMwSl9K471SK7YllmjnYwE_iNdIcMsiuvnd79kElPvGihz4dP_x83b-PE1Df8x2TL5Yz9e4aLvfAF40hDccuCGcsXhjZYeSd1b6KiPFoYX129RR2sZs_Wl2KuFbrICE46sMxfDUvH0nhutj16DGUmQsY0xbcPzrS7dxnJs"/></div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container mb-4">By Medical Students, For Future Doctors.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">mail</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">phone</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">location_on</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary mb-4">Admissions</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">MBBS India</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim font-bold transition-colors duration-200 ease-in-out" href="#">MBBS Abroad</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">BDS Admissions</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">AYUSH Courses</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">PG Admissions</a>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary mb-4">Our Offices</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">Bilaspur Branch</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">Kolkata Branch</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">Delhi Branch</a>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary mb-4">Company</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors duration-200 ease-in-out" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/30 text-center">
+<p class="font-caption text-caption text-on-surface-variant dark:text-on-tertiary-container">© 2024 Dream Route Consultancy. By Medical Students, For Future Doctors.</p>
+</div>
+</div>
+</footer>
+</body></html>
